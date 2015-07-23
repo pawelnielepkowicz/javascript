@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Przykładowy kod JavaScript - Paweł Nielepkowicz</title>
+    <link rel="stylesheet"href="css/mainstyle.css">
+    <script src="js/przykladowy_kod.js"></script>
+</head>
+<body>
+
+<div class="droptarget" data-droparea="0">Przeciągnij u upuść pliki graficzne</div>
+<div class="droptarget" data-droparea="1">Przeciągnij u upuść pliki graficzne</div>
+<div class="droptarget" data-droparea="2">Przeciągnij u upuść pliki graficzne</div>
+<div class="droptarget" data-droparea="3">Przeciągnij u upuść pliki graficzne</div>
+<br/>
+<h3>Wczytaj pliki graficzne z dysku twardego:</h3>
+<br/>
+<input id="inputFiles1" type="file" data-input-files="0" multiple/>
+<input id="inputFiles2" type="file" data-input-files="1" multiple/>
+
+<br/>
+<ul id="thumbslist"></ul>
+<br/>
+<h1>Opis:</h1>
+<p>Oto próbka mojego kodu Javascript. Skrypt posiada następujące funkcje:
+<br/>
+- mamy określone elementy html i jeśli na jeden z nich przeciągniemy kilka 
+plików graficznych, to zostaną wczytane do pamięci przeglądarki i zostaną 
+wyświetlone miniaturki - ikonki. Miniaturki wyświetlane za pomocą Canvas. 
+Jeśli klikniemy na jakąś ikonkę, to w nowej zakładce otworzy się dane 
+zdjęcie w oryginalnej rozdzielczości. Użyłem do tego BlobURL.
+<br/>
+- dokładnie w ten sam sposób możemy wczytać kilka plików za pomocą input - 
+file
+<br/>
+- kod tak zaprojektowałem, że skrypt automatycznie wyszukuje określone 
+elementy html oraz file - input i dodaje do nich pożądaną funkcjonalność. 
+Skorzystałem tutaj z data-attribute.
+<br/>
+- skrypt został napisany zgodnie z Module Design Pattern
+<br/>
+- do kodu napisałem komentarze. Położyłem nacisk na poprawną strukturę 
+uporządkowanie i czytelność kodu.</p>
+<br/>
+
+
+
+
+</body>
+</html>
